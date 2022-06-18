@@ -6,6 +6,7 @@ import CSS from "../../images/CSS.jpg";
 import Responsive from "../../images/responsive web.jpg";
 import JavaScript from "../../images/JavaScript.png";
 import Coursera from "../../images/Coursera.jpg";
+import Degree from "../../images/UniversityDegree.pdf";
 import { animateScroll as scroll } from "react-scroll";
 import {
   InfoContainer,
@@ -47,7 +48,13 @@ const InfoSection = () => {
           <Column1>
             <TextWrapper>
               <TitleText>Software Engineering</TitleText>
-              <PText>I have graduated from Shiraz university</PText>
+              <PText>
+                I have graduated from Shiraz university by the average 18.67 out
+                of 20
+              </PText>
+              <Image href={Degree} target="_blank">
+                Download University Degree
+              </Image>
             </TextWrapper>
           </Column1>
           <Column2>

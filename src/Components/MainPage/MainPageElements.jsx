@@ -59,8 +59,10 @@ export const PictureWrapper = styled.div`
   align-items: center;
 `;
 export const Picture = styled.img`
+  position: absolute;
   width: 300px;
   height: 450px;
+  border-radius: 2rem;
 `;
 export const SocialWrapper = styled.div`
   width: 100%;
