@@ -1,7 +1,6 @@
 import React from "react";
 import { AiFillInstagram, AiFillGithub } from "react-icons/ai";
 import pic from "../../images/personal.jpg";
-import { Education } from "../../pages/Education";
 import { SiGmail } from "react-icons/si";
 import {
   MainContainer,
@@ -72,7 +71,7 @@ const MainPage = ({ Gradient, changeTheme }) => {
                     </CardText>
                   </CardContent>
                 </UniBox>
-                <Hobbies to="/">
+                <Hobbies to="/Hobbies" target="_blank">
                   <CardContent IsHover={true}>
                     <CardTitle>Hobbies</CardTitle>
                     <CardText>
@@ -83,7 +82,7 @@ const MainPage = ({ Gradient, changeTheme }) => {
                 </Hobbies>
               </PartOne>
               <PartTwo>
-                <Graphic to="/">
+                <Graphic to="/Graphic" target="_blank">
                   <CardContent IsHover={true}>
                     <CardTitle>Graphical Skills</CardTitle>
                     <CardText>
@@ -91,7 +90,7 @@ const MainPage = ({ Gradient, changeTheme }) => {
                     </CardText>
                   </CardContent>
                 </Graphic>
-                <Language to="/">
+                <Language to="/Language" target="_blank">
                   <CardContent IsHover={true}>
                     <CardTitle>Languages</CardTitle>
                     <CardText>

@@ -2,9 +2,13 @@ import styled from "styled-components";
 import { Link as LinkS } from "react-scroll";
 
 export const HeaderContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
   margin: 0;
-  padding: 0;
-  height: 650px;
+  padding: 0 30px;
+  height: 800px;
   z-index: 1;
 `;
 export const HeaderBg = styled.div`
@@ -14,15 +18,19 @@ export const HeaderBg = styled.div`
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: auto;
   overflow: hidden;
   opacity: 0.2px;
 `;
 export const VideoBg = styled.video`
+  position: absolute;
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
   object-fit: cover;
+  @media screen and (max-width: 768px) {
+    background-color: #1d1d1d;
+  }
 `;
 export const ColorBg = styled.div`
   position: absolute;
