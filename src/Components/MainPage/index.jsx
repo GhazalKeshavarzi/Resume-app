@@ -23,6 +23,7 @@ import {
   SocialWrapper,
   PictureWrapper,
   SocialLink,
+  Signup,
 } from "./MainPageElements";
 const MainPage = ({ Gradient, changeTheme }) => {
   return (
@@ -59,6 +60,9 @@ const MainPage = ({ Gradient, changeTheme }) => {
               <ThemeBtn Gradient={Gradient} onClick={changeTheme}>
                 Theme
               </ThemeBtn>
+              <Signup to="/Signup" target="-blank" Gradient={Gradient}>
+                Sign up
+              </Signup>
             </BtnWrapper>
             <ChartWrapper>
               <PartOne>

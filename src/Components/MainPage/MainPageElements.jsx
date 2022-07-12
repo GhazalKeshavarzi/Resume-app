@@ -87,6 +87,7 @@ export const SocialLink = styled.a`
     cursor: pointer;
     transform: scale(1.5);
     box-shadow: 0 0 10px #1d1d1d;
+    color: #fff;
   }
 `;
 export const TextWrapper = styled.div`
@@ -131,9 +132,27 @@ export const ThemeBtn = styled.button`
   color: #fff;
   border: none;
   outline: none;
+  margin-left: 10px;
+  font-size: 18px;
   &:hover {
     background-color: #767676;
     box-shadow: 0px 0px 60px #ff0099;
+  }
+`;
+export const Signup = styled(LinkR)`
+  border-radius: 2rem;
+  padding: 10px 16px;
+  background-color: #1d1d1d;
+  color: #fff;
+  border: none;
+  outline: none;
+  margin-left: 10px;
+  text-decoration: none;
+  font-size: 18px;
+  &:hover {
+    background-color: #767676;
+    box-shadow: 0px 0px 60px #ff0099;
+    color: #fff;
   }
 `;
 export const ChartWrapper = styled.div`

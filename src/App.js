@@ -5,6 +5,7 @@ import Education from "./pages/Education";
 import Hobbies from "./pages/Hobbies";
 import Language from "./pages/Language";
 import Graphic from "./pages/Graphic";
+import SignUp from "./pages/SignUp";
 function App() {
   return (
     <Router>
@@ -14,6 +15,7 @@ function App() {
         <Route path="Hobbies" element={<Hobbies />} exact />
         <Route path="Language" element={<Language />} exact />
         <Route path="Graphic" element={<Graphic />} exact />
+        <Route path="SignUp" element={<SignUp />} exact />
       </Routes>
     </Router>
   );
