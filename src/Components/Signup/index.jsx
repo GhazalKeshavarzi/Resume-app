@@ -5,46 +5,57 @@ const Signup = () => {
     account: { username: "", password: "" },
   });
   const handelChange = (e) => {
+    console.log(e.target);
     const account = { ...state.account };
     account[e.target.id] = e.target.value;
     setState({ account });
   };
+  const handelSubmit = (e) => {
+    e.preventDefault();
+  };
   return (
-    <form className="m-auto w-50 mt-4 border border-success ">
+    <form
+      onSubmit={handelSubmit}
+      className="m-auto w-50 mt-4 border border-success "
+    >
       <div className="bg-success">
         <h2 className="text-light text-center p-4">Sign up form</h2>
       </div>
-      <div class="m-3">
-        <label htmlFor="exampleInputEmail1" class="form-label">
+      <div className="m-3">
+        <label htmlFor="username" className="form-label">
           Username
         </label>
         <input
           value={state.account.username}
           onChange={handelChange}
           type="text"
-          class="form-control"
-          id="exampleInputEmail1"
+          className="form-control"
+          id="username"
         />
       </div>
-      <div class="m-3">
-        <label htmlFor="exampleInputPassword1" class="form-label">
+      <div className="m-3">
+        <label htmlFor="password" className="form-label">
           Password
         </label>
         <input
           value={state.account.password}
           onChange={handelChange}
           type="text"
-          class="form-control"
-          id="exampleInputPassword1"
+          className="form-control"
+          id="password"
         />
       </div>
-      <div class="m-3 form-check">
-        <input type="checkbox" class="form-check-input" id="exampleCheck1" />
-        <label class="form-check-label" for="exampleCheck1">
+      <div className="m-3 form-check">
+        <input
+          type="checkbox"
+          className="form-check-input"
+          id="exampleCheck1"
+        />
+        <label className="form-check-label" htmlFor="exampleCheck1">
           Remember me
         </label>
       </div>
-      <button type="submit" class="btn btn-primary m-3">
+      <button type="submit" className="btn btn-primary m-3">
         Sign up
       </button>
     </form>
